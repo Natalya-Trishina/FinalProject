@@ -23,12 +23,12 @@ string[] FindLessThan(string[] input, int n)
 {
     string[] output = new string[CountLessThan(input, n)];
 
-    for (int a = 0, b = 0; a < input.Length; a++)
+    for (int i = 0, j = 0; i < input.Length; i++)
     {
-        if (input[a].Length <= n)
+        if (input[i].Length <= n)
         {
-            output[b] = input[a];
-            b++;
+            output[j] = input[i];
+            j++;
         }
     }
 
@@ -39,9 +39,9 @@ int CountLessThan(string[] input, int n)
 {
     int count = 0;
 
-    for (int a = 0; a < input.Length; a++)
+    for (int i = 0; i < input.Length; i++)
     {
-        if (input[a].Length <= n)
+        if (input[i].Length <= n)
         {
             count++;
         }
